@@ -1,9 +1,8 @@
 /* Universal */
 
 body {
-  font-family: "Montserrat", serif; /* FIX THIS */
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  color: #4a4a4a;
   line-height: 160%;
 }
 .container {
@@ -19,6 +18,7 @@ body {
   width: 40%;
   padding-left: 24px;
 }
+
 .list-infobox-image {
   width: 35%;
   padding: 16px;
@@ -29,9 +29,8 @@ body {
   justify-content: center;
   padding: 16px 0;
 }
-
-.grid {
-   padding: 32px 56px 0 32px;
+.grid-row {
+   margin: 32px 56px 0 32px;
 }
 .grid-infobox {
   margin: 0px 16px;
@@ -45,7 +44,8 @@ body {
 
 .large-column img,
 .list-infobox-image img,
-.grid-infobox img {
+.grid-infobox img,
+.large-column video {
   width: 100%;
   vertical-align: middle;
 }
@@ -60,16 +60,17 @@ h2 {
   font-size: 1.5rem;
 }
 h3 {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
   padding-bottom: 8px;
 }
 .title-center h2 {
   text-align: center;
+  margin-bottom: 32px;
 }
 
 body p {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   line-height: 1.6;
   padding: 0;
 }
@@ -86,6 +87,9 @@ body a:hover, a:visited, a:link, a:active {
 }
 .fg-grey-light {
   color: #9b9b9b;
+}
+.fg-grey-dark {
+  color: #4a4a4a;
 }
 
 /* Header with logo and menu */
@@ -157,4 +161,20 @@ nav li {
 /* Curriculum */
 #curriculum p:nth-child(2) { /* Overkill way of adding padding under "COURSES" */
   padding-bottom: 8px;
+}
+
+/* Thesis exhibit */
+#thesis-exhibit video {
+  padding-bottom: 24px;
+}
+
+/* Footer */
+footer {
+  padding: 16px 24px 32px 24px;
+}
+#copyright {
+  flex-grow: 1;
+}
+#legal-terms p {
+  padding-left: 16px;
 }

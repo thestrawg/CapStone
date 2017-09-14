@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./resources/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
   </head>
-  <body>
+
+  <body class="fg-grey-dark">
 
     <!-- Header -->
     <header>
@@ -18,10 +19,10 @@
         </div>
         <nav>
           <ul class="flex">
-            <li>On campus</li>
-            <li>Online</li>
-            <li>For companies</li>
-            <li>Sign in</li>
+            <li><a href="#" class="fg-grey-dark">On campus</a></li>
+            <li><a href="#" class="fg-grey-dark">Online</a></li>
+            <li><a href="#" class="fg-grey-dark">For companies</a></li>
+            <li><a href="#" class="fg-grey-dark">Sign in</a></li>
           </ul>
         </nav>
       </div>
@@ -95,7 +96,7 @@
         <h2>Start learning</h2>
       </div>
 
-      <div class="flex grid">
+      <div class="flex grid-row">
         <div class="grid-infobox">
           <img src="resources/images/course-software.jpg" alt="Course Software">
           <div class=" grid-infobox-text">
@@ -122,7 +123,7 @@
           </div>
         </div>
       </div>
-      <div class="flex grid">
+      <div class="flex grid-row">
         <div class="grid-infobox">
           <img src="resources/images/course-data.jpg" alt="Course Data">
           <div class="grid-infobox-text">
@@ -150,6 +151,53 @@
       </div>
     </div>
 
+    <!-- Thesis exhibit -->
+    <div id="thesis-exhibit" class="container">
+      <div class="title-center">
+        <h2>Thesis exhibit</h2>
+      </div>
+      <div class="flex">
+        <div class="large-column">
+          <video src="resources/videos/thesis.mp4" autoplay></video>
+          <h3>Reimagine urban</h3>
+          <p>"Curabitur vitae libera in ipsum porttitor consequat.
+            Aliquam et commodo lectus, net consequat rieque. Sed non
+            accumsan urna. Phasellus sed consequat ex. Etiam eget
+            magna laoraet, efficitur dolor consequat, tristique ligula."</p>
+        </div>
+        <div class="small-column">
+          <div class="flex list-infobox bg-grey-dark">
+            <div class="list-infobox-image">
+              <img src="resources/images/thesis-fisma.jpg" alt="Fisma">
+            </div>
+            <div class="flex list-infobox-text">
+              <h3>Fisma: Design and Prototype</h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+          </div>
+          <div class="flex list-infobox">
+            <div class="list-infobox-image">
+              <img src="resources/images/thesis-now-and-then.jpg" alt="New York">
+            </div>
+            <div class="flex list-infobox-text">
+              <h3>Now and then</h3>
+              <p>Research study about New York</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="flex">
+      <div id="copyright" class="flex">
+        <p>&copy; 2016 Colmar Academy. All rights reserved</p>
+      </div>
+      <div id="legal-terms" class="flex">
+        <p><a href="#" class="fg-grey-dark">Terms</a></p>
+        <p><a href="#" class="fg-grey-dark">Privacy</a></p>
+      </div>
+    </footer>
 
   </body>
 </html>
