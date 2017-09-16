@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- FIXME -->
   </head>
 
   <body class="fg-grey-dark">
@@ -26,6 +27,12 @@
           </ul>
         </nav>
       </div>
+      <div class="mobile-nav">
+        <a href="#"><img src="resources/images/ic-logo.svg" alt="Logo Colmar Academy"></a>
+        <a href="#"><img src="resources/images/ic-on-campus.svg" alt="On campus"></a>
+        <a href="#"><img src="resources/images/ic-login.svg" alt="Sign in"></a>
+        <a href="#"><img src="resources/images/ic-online.svg" alt="Online"></a>
+      </div>
     </header>
 
     <!-- Banner -->
@@ -43,23 +50,26 @@
         </div>
       </div>
     </div>
+
     <!-- Main info -->
-    <div class="flex container">
-      <div class="large-column">
+    <div id="main-info" class="flex container">
+      <div class="large-column main-testimonial">
         <img src="resources/images/information-main.jpg" alt="Testimonial">
-        <div class="main-testimonial">
+        <div class="main-testimonial-text">
           <h2>It doesn't hurt to keep practicing</h2>
           <p>"Curabitur vitae libera in ipsum porttitor consequat.
             Aliquam et commodo lectus, net consequat rieque. Sed non
             accumsan urna. Phasellus sed consequat ex. Etiam eget
-            magna laoraet, efficitur dolor consequat, tristique ligula."</p>
+            magna laoraet, efficitur dolor consequat, tristique ligula."
+          </p>
           <p id="author">Emmanuel, Sr Strategist at Hiring.com</p>
         </div>
       </div>
       <div id="campus-news" class="small-column">
         <div id="orientation-date" class="flex list-infobox">
           <div class="list-infobox-image">
-            <img src="resources/images/information-orientation.jpg" alt="Orientation">
+            <img class="desktop" src="resources/images/information-orientation.jpg" alt="Orientation">
+            <img class="mobile" src="resources/images/information-orientation-mobile.jpg" alt="Orientation">
           </div>
           <div class="flex list-infobox-text">
             <h3>Orientation date</h3>
@@ -69,7 +79,8 @@
         </div>
         <div class="flex list-infobox">
           <div class="list-infobox-image">
-            <img src="resources/images/information-campus.jpg" alt="Campus">
+            <img class="desktop" src="resources/images/information-campus.jpg" alt="Campus">
+            <img class="mobile" src="resources/images/information-campus-mobile.jpg" alt="Campus">
           </div>
           <div class="flex list-infobox-text">
             <h3>Our campus</h3>
@@ -79,7 +90,8 @@
         </div>
         <div class="flex list-infobox bg-grey-dark">
           <div class="list-infobox-image">
-            <img src="resources/images/information-guest-lecture.jpg" alt="Guest">
+            <img class="desktop" src="resources/images/information-guest-lecture.jpg" alt="Guest">
+            <img class="mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="Guest">
           </div>
           <div class="flex list-infobox-text">
             <h3>Our guest lecture</h3>
@@ -95,11 +107,10 @@
       <div class="title-center">
         <h2>Start learning</h2>
       </div>
-
       <div class="flex grid-row">
         <div class="grid-infobox">
           <img src="resources/images/course-software.jpg" alt="Course Software">
-          <div class=" grid-infobox-text">
+          <div class="grid-infobox-text">
             <h3>Software engineering</h3>
             <p>COURSES</p>
             <p>Web Development, Mobile Development, iOT, APIs</p>
@@ -107,16 +118,16 @@
         </div>
         <div class="grid-infobox">
           <img src="resources/images/course-computer-art.jpg" alt="Course Computer Art">
-          <div class=" grid-infobox-text">
+          <div class="grid-infobox-text">
             <h3>Computer art</h3>
             <p>COURSES</p>
             <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects,
             Computer Animation</p>
           </div>
         </div>
-        <div class=" grid-infobox">
+        <div class="grid-infobox">
           <img src="resources/images/course-design.jpg" alt="Course Design">
-          <div class=" grid-infobox-text">
+          <div class="grid-infobox-text">
             <h3>Design</h3>
             <p>COURSES</p>
             <p>User Experience Design, User Research, Visual Design</p>
@@ -158,12 +169,15 @@
       </div>
       <div class="flex">
         <div class="large-column">
-          <video src="resources/videos/thesis.mp4" autoplay></video>
-          <h3>Reimagine urban</h3>
-          <p>"Curabitur vitae libera in ipsum porttitor consequat.
-            Aliquam et commodo lectus, net consequat rieque. Sed non
-            accumsan urna. Phasellus sed consequat ex. Etiam eget
-            magna laoraet, efficitur dolor consequat, tristique ligula."</p>
+          <video src="resources/videos/thesis.mp4" autoplay loop></video>
+          <div class="video-comment">
+            <h3>Reimagine urban</h3>
+            <p>"Curabitur vitae libera in ipsum porttitor consequat.
+              Aliquam et commodo lectus, net consequat rieque. Sed non
+              accumsan urna. Phasellus sed consequat ex. Etiam eget
+              magna laoraet, efficitur dolor consequat, tristique ligula."
+            </p>
+          </div>
         </div>
         <div class="small-column">
           <div class="flex list-infobox bg-grey-dark">
